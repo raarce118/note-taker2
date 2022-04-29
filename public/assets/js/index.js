@@ -1,5 +1,3 @@
-// Copy and pasted from starter code
-
 let noteTitle;
 let noteText;
 let saveNoteBtn;
@@ -60,6 +58,7 @@ const renderActiveNote = () => {
     noteText.setAttribute('readonly', true);
     noteTitle.value = activeNote.title;
     noteText.value = activeNote.text;
+    console.log(activeNote.title)
   } else {
     noteTitle.removeAttribute('readonly');
     noteText.removeAttribute('readonly');
